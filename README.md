@@ -1,4 +1,4 @@
-# 301 
+# 301 [![Build Status](https://travis-ci.org/markhuge/301.svg?branch=2.0.0)](https://travis-ci.org/markhuge/301)
 
 > A super simple HTTP redirection server
 
