@@ -1,0 +1,21 @@
+language: go
+go:
+- '1.3'
+install: go get github.com/mgutz/minimist
+script: make all
+deploy:
+  - provider: releases
+    api-key: 
+      secure: EKh/wnFTqFFBarDNevjUBxjQsE9fITvvg1P3x4f8BO32yijPtx/c0dXlTWGv6q0NDzLKSXtgXsN4JiTf5DRAoubcJH2pSrQIWz8cpS6zS/WraaIwZ4mnQFyey+3pt3dsyvorsawEHiJgYkTCA/EfHpkt66rnVdqyOXBL45E8M/g=
+    file:
+      - linux386.tar.gz
+      - linux64.tar.gz
+      - linux_arm.tar.gz
+      - osx386.tar.gz
+      - osx64.tar.gz
+      - windows64.zip
+    skip_cleanup: true
+    on:
+      tags: true
+      all_branches: true
+      repo: markhuge/301
