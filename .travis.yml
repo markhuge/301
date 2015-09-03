@@ -5,6 +5,7 @@ install: go get github.com/mgutz/minimist
 script: make all
 deploy:
   - provider: releases
+  email: mark@markwilkerson.me
     api-key: 
       secure: EKh/wnFTqFFBarDNevjUBxjQsE9fITvvg1P3x4f8BO32yijPtx/c0dXlTWGv6q0NDzLKSXtgXsN4JiTf5DRAoubcJH2pSrQIWz8cpS6zS/WraaIwZ4mnQFyey+3pt3dsyvorsawEHiJgYkTCA/EfHpkt66rnVdqyOXBL45E8M/g=
     file:
