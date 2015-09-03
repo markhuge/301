@@ -4,18 +4,18 @@ go:
 install: go get github.com/mgutz/minimist
 script: make all
 deploy:
-  - provider: releases
-    api-key: 
-      secure: EKh/wnFTqFFBarDNevjUBxjQsE9fITvvg1P3x4f8BO32yijPtx/c0dXlTWGv6q0NDzLKSXtgXsN4JiTf5DRAoubcJH2pSrQIWz8cpS6zS/WraaIwZ4mnQFyey+3pt3dsyvorsawEHiJgYkTCA/EfHpkt66rnVdqyOXBL45E8M/g=
-    file:
-      - linux386.tar.gz
-      - linux64.tar.gz
-      - linux_arm.tar.gz
-      - osx386.tar.gz
-      - osx64.tar.gz
-      - windows64.zip
-    skip_cleanup: true
-    on:
-      tags: true
-      all_branches: true
-      repo: markhuge/301
+- provider: releases
+  api-key:
+    secure: TUZOOjf+CFnx+OQ1SvzZc7rlf38dFuGZJTWXcOnKM1wIUEBF5/1vaBcYSvxRabhBkFeuD52O7LLnt02xYkUeTpxpVvBJCFkXgg6yUDsEd/N//TcIMpgmFhBCI8J2sMelfHJe/uV+LYH26P2b17bJX+9eq4ysap5UNyAJPjWIzAMB2Eb2F82ztz1RhmbMqKwnYegZ0cP3aVhpycobHZNldCIRDBUvDUxUgp8c96L/Doj9Wd1Ti4HT99a1WjZaurHuRCehwd2/gNfqKsPQ/3X8CieLg//iAtUQhcHnKc0A4EiLpE6g2IN3YEIbVb77IMXUnSZvYIA6DDZ2QNco/kyE+tNCFQNzHJ+pk76HcW7oPiOqwj7ZMyvaUigEUvsWSNOIkgG1YdIO0R0jwqyElJj7DFoUth3XS36Eb6l/nSamAytdSSKSMAqf6621kmkTfdvrwIMUXSwEU07vGwOM1PK1H4g3xiOGbX31R+3YVFFxUkWOx9v21VlSh+tBSp6xOx1JbUi0awRaYwo6CrSWpHMpXEnlo59yMBzlmtlB9oy0T/LCTKDg0Hj+jmu9eZ8JfzKhY4b92iZBosib44ZiYSMOGod6k6czn2llqHct+FpPRSzlUm3/Qsw3ClHJB0qW7gsXL1xnn6alDzPjDHuezmmK7gk4VL3sQrdXHsVLXi7eCDI=
+  file:
+  - linux386.tar.gz
+  - linux64.tar.gz
+  - linux_arm.tar.gz
+  - osx386.tar.gz
+  - osx64.tar.gz
+  - windows64.zip
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+    repo: markhuge/301
